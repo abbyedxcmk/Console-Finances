@@ -105,10 +105,10 @@ for (let i = 1; i < finances.length; i++) {
   totalChanges += finances[i][1] - finances[i - 1][1]
 }
 
-averageChange = Math.floor((totalChanges / (finances.length - 1))*100 )/100;
+averageChange = Math.round((totalChanges / (finances.length - 1))*100 )/100;
 
-//Greatest Increase in Profits/Losses: Feb-2012 ($1926159)
-//Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167)
+//Greatest Increase in Profits/Losses 
+//Greatest Decrease in Profits/Losses
 
 let greatestIncrease = 0;
 let greatestIncreaseMonth = '';

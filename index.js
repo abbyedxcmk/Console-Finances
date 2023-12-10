@@ -111,8 +111,13 @@ averageChange = Math.floor((totalChanges / (finances.length - 1))*100 )/100;
 console.log(`Average change: ${averageChange}`);
 
 //Greatest Increase in Profits/Losses: Feb-2012 ($1926159)
+//Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167)
+
 let greatestIncrease = 0;
-let greatestMonth = '';
+let greatestIncreaseMonth = '';
+let greatestDecrease = 0;
+let greatestDecreaseMonth = '';
+
 let currentChange = 0;
 let currentMonth = '';
 for (let i = 1; i < finances.length;i++) {
@@ -120,9 +125,13 @@ for (let i = 1; i < finances.length;i++) {
   currentMonth =finances[i][0];
   if (currentChange > greatestIncrease){
     greatestIncrease = currentChange;
-    greatestMonth = currentMonth;
+    greatestIncreaseMonth = currentMonth;    
+  }
+  if (currentChange < greatestDecrease){
+    greatestDecrease = currentChange;
+    greatestDecreaseMonth = currentMonth;    
   }
 }
-console.log(`The greatest increase in profit/losses: ${greatestMonth},${greatestIncrease}`);
+console.log(`The greatest increase in profit/losses: ${greatestIncreaseMonth},${greatestIncrease}`);
+console.log(`The greatest decrease in profit/losses: ${greatestDecreaseMonth},${greatestDecrease}`);
 
-//Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167)

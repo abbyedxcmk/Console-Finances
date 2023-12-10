@@ -98,3 +98,15 @@ for (let i = 0; i < finances.length; i++) {
 }
 console.log(`total profit/loss: ${totalProfitLoss}`);
 
+// Average of the changes in profit/losses
+
+let totalChanges = 0;
+let averageChange = 0;
+
+for (let i = 1; i < finances.length; i++) {
+  totalChanges += finances[i][1] - finances[i - 1][1]
+}
+
+averageChange = Math.floor((totalChanges / (finances.length - 1))*100 )/100;
+console.log(`Average change: ${averageChange}`);
+

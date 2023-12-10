@@ -110,3 +110,19 @@ for (let i = 1; i < finances.length; i++) {
 averageChange = Math.floor((totalChanges / (finances.length - 1))*100 )/100;
 console.log(`Average change: ${averageChange}`);
 
+//Greatest Increase in Profits/Losses: Feb-2012 ($1926159)
+let greatestIncrease = 0;
+let greatestMonth = '';
+let currentChange = 0;
+let currentMonth = '';
+for (let i = 1; i < finances.length;i++) {
+  currentChange =finances[i][1] - finances[i -1][1];
+  currentMonth =finances[i][0];
+  if (currentChange > greatestIncrease){
+    greatestIncrease = currentChange;
+    greatestMonth = currentMonth;
+  }
+}
+console.log(`The greatest increase in profit/losses: ${greatestMonth},${greatestIncrease}`);
+
+//Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167)

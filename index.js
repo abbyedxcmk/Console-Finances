@@ -87,4 +87,7 @@ var finances = [
   ['Feb-2017', 671099],
 ];
 
+// total number of months in the dataset
+let totalMonths = finances.length;
+console.log(`total months of the dataset: ${totalMonths}`);
 

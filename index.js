@@ -89,14 +89,12 @@ var finances = [
 
 // total number of months in the dataset
 let totalMonths = finances.length;
-console.log(`total months of the dataset: ${totalMonths}`);
 
 // net total amount of profit/losses
 let totalProfitLoss = 0;
 for (let i = 0; i < finances.length; i++) {
   totalProfitLoss += finances[i][1];
 }
-console.log(`total profit/loss: ${totalProfitLoss}`);
 
 // Average of the changes in profit/losses
 
@@ -108,7 +106,6 @@ for (let i = 1; i < finances.length; i++) {
 }
 
 averageChange = Math.floor((totalChanges / (finances.length - 1))*100 )/100;
-console.log(`Average change: ${averageChange}`);
 
 //Greatest Increase in Profits/Losses: Feb-2012 ($1926159)
 //Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167)
@@ -132,6 +129,11 @@ for (let i = 1; i < finances.length;i++) {
     greatestDecreaseMonth = currentMonth;    
   }
 }
-console.log(`The greatest increase in profit/losses: ${greatestIncreaseMonth},${greatestIncrease}`);
-console.log(`The greatest decrease in profit/losses: ${greatestDecreaseMonth},${greatestDecrease}`);
+console.log('Financial Analysis');
+console.log('----------------');
+console.log(`Total Months: ${totalMonths}`);
+console.log(`Total: $${totalProfitLoss}`);
+console.log(`Average Change: ${averageChange}`);
+console.log(`Greatest Increase in Profits/Losses: ${greatestIncreaseMonth} ($${greatestIncrease})`);
+console.log(`Greatest Decrease in Profit/Losses: ${greatestDecreaseMonth} ($${greatestDecrease})`);
 

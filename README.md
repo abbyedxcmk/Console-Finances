@@ -1,35 +1,16 @@
 # Unit 4 Challenge: Console Finances
 
 ![screenshot of the deployed page](./docs/deployed-page.jpg)
+
 ## Overview
 
-In this challenge, you'll be using the concepts you've learned to complete the required activity. This activity presents a real-world situation in which your newfound JavaScript skills will come in handy. You are tasked with creating code for analyzing the financial records of a company. You have been provided with a financial dataset in the `starter/index.js` file.
+In this challenge, we had a real-world situation. We were tasked with creating code in JavaScript for analyzing the financial records of a company.
 
-## Instructions
+## Results
 
-1. Create a new GitHub repo called `Console-Finances`. Then, clone it to your computer.
+This is the final report made by our code:
 
-2. Copy the starter files in your local git repository.
-
-You have been given a dataset composed of arrays with two fields, Date and Profit/Losses.
-
-Your task is to write JavaScript code that analyzes the records to calculate each of the following:
-
-* The total number of months included in the dataset.
-
-* The net total amount of Profit/Losses over the entire period.
-
-* The average of the **changes** in Profit/Losses over the entire period.
-  * You will need to track what the total change in Profit/Losses are from month to month and then find the average.
-  * (`Total/(Number of months - 1)`)
-
-* The greatest increase in Profit/Losses (date and amount) over the entire period.
-
-* The greatest decrease in Profit/Losses (date and amount) over the entire period.
-
-When you open your code in the browser your resulting analysis should look similar to the following:
-
-  ```text
+```
   Financial Analysis 
   ----------------
   Total Months: 86
@@ -37,62 +18,15 @@ When you open your code in the browser your resulting analysis should look simil
   Average Change: -2315.12
   Greatest Increase in Profits/Losses: Feb-2012 ($1926159)
   Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167)
-  ```
+```
 
-Your final code should print the analysis to the console.
+## Deployment
 
-**Hints:**
+The page is deployed through GitHub Pages service.
 
-* You will need to do some research on your own for this project!
+[The link to the GitHub repository](https://github.com/abbyedxcmk/Console-Finances)
 
-* Remember, in order to combine strings and variables in the console you will need to use **concatenation**.
+[The link to the deployed page](https://abbyedxcmk.github.io/Console-Finances/)
 
-* How do you only print to the nearest 100th in JavaScript?
 
-## Grading Requirements
 
-This homework is graded based on the following criteria:
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-### Repository Quality: 23%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for variable naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-### Application Quality: 5%
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository that contains your code. Give the repository a unique name and include a README file that describes the project.
-
----
-
-## Copyright
-
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.

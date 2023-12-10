@@ -91,3 +91,10 @@ var finances = [
 let totalMonths = finances.length;
 console.log(`total months of the dataset: ${totalMonths}`);
 
+// net total amount of profit/losses
+let totalProfitLoss = 0;
+for (let i = 0; i < finances.length; i++) {
+  totalProfitLoss += finances[i][1];
+}
+console.log(`total profit/loss: ${totalProfitLoss}`);
+
